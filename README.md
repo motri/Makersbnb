@@ -1,5 +1,10 @@
+# MakersBnB
+## First makers group project.
+### Team members: [Isabel Larner](https://github.com/ilarne), [Sulaiman Ahmadshah](https://github.com/sulaimancode), [Henry Hobhouse](https://github.com/henryhobhouse), [Unai Motriko Gomez](https://github.com/motri)
 
-* Any signed-up user can list a new space.
+##User Stories
+
+### Any signed-up user can list a new space.
 ```
 As a user,
 So I can have an account,
