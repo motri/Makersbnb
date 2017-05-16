@@ -21,5 +21,8 @@
     "express": "^4.15.2",
     "mongodb": "^2.2.26",
     "sinon": "^2.2.0"
+  },
+  "devDependencies": {
+    "zombie": "^5.0.5"
   }
 }
