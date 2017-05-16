@@ -1,0 +1,25 @@
+{
+  "name": "makersbnb",
+  "version": "1.0.0",
+  "description": "Server for bnb website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motri/Makersbnb.git"
+  },
+  "author": "Sulaiman, Isabel, Henry, Unai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motri/Makersbnb/issues"
+  },
+  "homepage": "https://github.com/motri/Makersbnb#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "sinon": "^2.2.0"
+  }
+}
