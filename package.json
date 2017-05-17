@@ -1,0 +1,31 @@
+{
+  "name": "makersbnb",
+  "version": "1.0.0",
+  "description": "simple bnb app for Makers",
+  "main": "app.js",
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motri/Makersbnb.git"
+  },
+  "author": "Henry, Sulaiman, Unai, Isabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motri/Makersbnb/issues"
+  },
+  "homepage": "https://github.com/motri/Makersbnb#readme"
+}
