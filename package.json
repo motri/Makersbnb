@@ -7,12 +7,16 @@
     "angular2-flash-messages": "*",
     "bcryptjs": "*",
     "body-parser": "*",
+    "chai": "^3.5.0",
     "cors": "*",
     "express": "*",
     "jsonwebtoken": "*",
+    "mocha": "^3.4.1",
     "mongoose": "*",
     "passport": "*",
-    "passport-jwt": "*"
+    "passport-jwt": "*",
+    "sinon": "^2.2.0",
+    "zombie": "^5.0.5"
   },
   "devDependencies": {},
   "scripts": {
