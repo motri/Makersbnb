@@ -29,8 +29,9 @@ router.post('/signin', function(req, res, next) {
   User.getUserByEmail(email, function(err, user){
     if(err) throw err;
     if(!user){
-      return res.json({success: false, msg: 'User not found'});
+      return res.json({success: false});
     }
+
 
     User.comparePassword(password, user.password, function(err, isMatch){
       if(err) throw err;
@@ -49,7 +50,7 @@ router.post('/signin', function(req, res, next) {
           }
         });
       } else {
-        return res.json({success: false, msg: 'Wrong password'});
+        return res.json({success: false});
       }
     });
   });
