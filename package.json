@@ -4,6 +4,7 @@
   "description": "simple bnb app for Makers",
   "main": "app.js",
   "dependencies": {
+    "angular2-flash-messages": "*",
     "bcryptjs": "*",
     "body-parser": "*",
     "cors": "*",
