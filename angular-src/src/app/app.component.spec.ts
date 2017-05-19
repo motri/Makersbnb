@@ -53,8 +53,7 @@ describe('AppComponent', () => {
         AuthService,
         ValidateService,
         { provide: APP_BASE_HREF, useValue: '/' }
-      ],
-
+      ]
     }).compileComponents();
   }));
 
@@ -64,16 +63,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'MAKERS BnB'`, async(() => {
+  it(`should have title 'MAKERS BnB'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toContain('MAKERS BnB');
   }));
 
-  // it('should render title in a h1 tag', async(() => {
-  //   const fixture = TestBed.createComponent(HomeComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.debugElement.nativeElement;
-  //   expect(compiled.querySelector('h1').textContent).toContain('MAKERS BnB');
-  // }));
 });

@@ -42,4 +42,20 @@ describe('HomeComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p').textContent).toContain('Sulaiman');
   }));
+
+  it('should contain a link to SIGN UP', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#signUpButton').textContent).toContain('SIGN UP')
+  }));
+
+  it('should contain a link to SIGN IN', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#signInButton').textContent).toContain('SIGN IN')
+  }));
+
+  it('should provide brief description of services', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#serviceIntro').textContent).toContain('List your space')
+  }))
+
 });
