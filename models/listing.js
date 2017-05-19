@@ -23,3 +23,9 @@ const listingSchema = mongoose.Schema({
     required: true
   }
 });
+
+const Listing = module.exports.mongoose.model('Listing', listingSchema)
+
+module.exports.addListing = function(newListing, callback){
+    newListing.save(callback);
+}
