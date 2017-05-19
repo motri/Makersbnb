@@ -36,4 +36,11 @@ export class AuthService {
     localStorage.clear();
   }
 
+  storeListing(listing){
+    let headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    return this.http.post('http://localhost:2368/listings/new-listing', listing,{headers: headers})
+    .map(res => res.json());
+  }
+
 }

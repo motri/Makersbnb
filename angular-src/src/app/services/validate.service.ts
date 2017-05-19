@@ -5,6 +5,14 @@ export class ValidateService {
 
   constructor() { }
 
+  validateListing(listing){
+    if(listing.name == undefined ){
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   validateSignup(user){
     if(user.name == undefined || user.email == undefined || user.password == undefined){
       return false;
