@@ -1,18 +1,20 @@
-<div class="jumbotron text-center">
-  <h1> Makers BnB </h1>
+
+<div class="jumbotron text-center" id="homepageBody">
+  <h1>MAKERS BnB</h1>
   <p class ="lead"> Welcome to Makers BnB by Sulaiman, Izzy, Unai and Henry. </p>
   <div>
-    <a class="btn btn-primary" [routerLink]="['/signup']"> SIGN UP </a> <a class="btn btn-primary" [routerLink]="['/signin']"> SIGN IN </a>
+    <a class="btn btn-primary" [routerLink]="['/signup']" id="signUpButton"> SIGN UP </a> <a class="btn btn-primary" id="signInButton" [routerLink]="['/signin']"> SIGN IN </a>
   </div>
-</div>
 
-<div class="row">
-  <div class="col-md-6 text-center">
-    <h2> <a [routerLink]="['/new-listing']">List your space </a></h2><br>
-    <p> List your funky home and earn money whilst annoying your neighbours!</p>
-  </div>
-  <div class="col-md-6 text-center">
-    <h2> Find a funky space </h2><br>
-    <p> Need a break? Doing a Makers course? Get some rest at another student's funky space and annoy <i>their</i> neighbours!</p>
+<div id="serviceIntro">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h2 > List your space </h2><br>
+      <p> List your funky home and earn money whilst annoying your neighbours!</p>
+    </div>
+    <div class="col-md-6 text-center">
+      <h2> Find a funky space </h2><br>
+      <p> Need a break. Doing a Makers course? Get some rest at another students funky space. Annoy their neighbours!</p>
+    </div>
   </div>
 </div>

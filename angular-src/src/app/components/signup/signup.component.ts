@@ -3,6 +3,9 @@ import { ValidateService } from '../../services/validate.service';
 import { AuthService } from '../../services/auth.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-signup',
