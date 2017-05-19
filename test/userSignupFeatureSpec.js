@@ -1,7 +1,7 @@
 var Browser = require('zombie');
 var mongoose = require('mongoose');
 
-Browser.localhost('localhost', 4200);
+Browser.localhost('localhost', 2368);
 
 describe('User visits signup page', function() {
 

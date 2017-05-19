@@ -29,9 +29,5 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/'])
   }
 
-  signout(){
-    var name = JSON.parse(localStorage.user).name;
-    return name;
-  }
 
 }
