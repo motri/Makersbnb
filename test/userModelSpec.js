@@ -1,6 +1,6 @@
-var expect = require('chai').expect;
+const expect = require('chai').expect;
 
-var User = require('../app/models/user.js');
+const User = require('../models/user.js');
 
 var testUser;
 
@@ -10,24 +10,24 @@ beforeEach(function() {
                         password: 'secret123'} );
 });
 
-describe('user', function() {
-  it('has a email', function(done) {
+describe('User', function() {
+  it('has email as joe.com', function(done) {
     testUser.validate(function() {
-      expect(testUser.email).to.exist;
+      expect(testUser.email).to.equal('joe.com');
       done();
     });
   });
 
-  it('has a name', function(done) {
+  it('has a name as Joe', function(done) {
     testUser.validate(function() {
-      expect(testUser.name).to.exist;
+      expect(testUser.name).to.equal('Joe');
       done();
     });
   });
 
   it('has a password', function(done) {
     testUser.validate(function() {
-      expect(testUser.name).to.exist;
+      expect(testUser.password).to.equal('secret123');
       done();
     });
   });
