@@ -15,16 +15,15 @@ const listingSchema = mongoose.Schema({
     required: true
   },
   price: {
-    type: Number
+    type: Number,
     required: true
   },
   listedBy: {
     type: String
-    required: true
   }
 });
 
-const Listing = module.exports.mongoose.model('Listing', listingSchema)
+const Listing = module.exports = mongoose.model('Listing', listingSchema)
 
 module.exports.addListing = function(newListing, callback){
     newListing.save(callback);

@@ -5,10 +5,9 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database')
 
 const Listing = require('../models/listing');
+const User = require('../models/user');
 
-router.post('/new-listing', passport.authenticate('jwt', {session: false}), function(req, res, next) {
-  res.json({user: req.user});
-  console.log(req.user)
+router.post('/new-listing', function(req, res, next) {
   let newListing = new Listing({
     name: req.body.name,
     address: req.body.address,

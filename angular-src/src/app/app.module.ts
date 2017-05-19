@@ -11,6 +11,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { NewlistingComponent } from './components/newlisting/newlisting.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import {ValidateService} from './services/validate.service';
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
   {path:'signup', component: SignupComponent},
   {path:'signin', component: SigninComponent},
   {path:'dashboard', component: DashboardComponent},
-  {path:'profile', component: ProfileComponent}
+  {path:'profile', component: ProfileComponent},
+  {path:'new-listing', component: NewlistingComponent}
 ]
 
 @NgModule({
@@ -32,7 +34,8 @@ const appRoutes: Routes = [
     SignupComponent,
     HomeComponent,
     DashboardComponent,
-    ProfileComponent
+    ProfileComponent,
+    NewlistingComponent
   ],
   imports: [
     BrowserModule,

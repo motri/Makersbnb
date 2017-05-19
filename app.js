@@ -19,6 +19,7 @@ mongoose.connection.on('error', function(err) {
 const app = express();
 
 const users = require('./routes/users');
+const listings = require('./routes/listings');
 
 const port = 2368;
 
@@ -31,10 +32,13 @@ app.use(passport.session());
 require('./config/passport')(passport);
 
 app.use('/users', users);
+app.use('/listings', listings);
 
 app.get('/', function(req, res) {
   res.send('HOMPAAAGE!!');
 });
+
+// ABOVE IS OLD CODE BEFORE CORS REDIRECT
 
 app.listen(port, function() {
   console.log('Server started on port '+ port)
